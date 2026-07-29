@@ -1,0 +1,13 @@
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #8b5b25;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.rating svg {
+  fill: #dba650;
+  stroke: #b7772f;
+}

@@ -1,0 +1,33 @@
+.card {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.illustration {
+  position: relative;
+  height: 145px;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.8);
+  background: #d8e2d4;
+}
+.illustration > svg { position: absolute; top: 20px; left: 20px; }
+.sun { position: absolute; top: 25px; right: 25px; width: 38px; height: 38px; border-radius: 50%; background: #edc478; }
+.horizon { position: absolute; right: -10%; bottom: -56%; width: 115%; height: 120%; border-radius: 50% 50% 0 0; background: #668168; transform: rotate(-5deg); }
+.water .horizon { bottom: -25%; height: 55%; border-radius: 50% 50% 0 0; background: #6f9ca0; transform: none; }
+.forest .horizon { background: #395f47; }
+
+.body { padding: 22px; }
+.topline { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--color-muted); font-size: 0.7rem; font-weight: 650; text-transform: uppercase; letter-spacing: 0.08em; }
+.match { padding: 5px 8px; border-radius: 99px; color: #276144; background: #dcebdc; letter-spacing: 0; text-transform: none; }
+.medium { color: #745425; background: #f0e3c6; }
+.body h2 { margin-top: 11px; font-size: 1.35rem; letter-spacing: -0.035em; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 15px 0; }
+.tags span { padding: 5px 8px; border: 1px solid var(--color-border); border-radius: 99px; color: #626a65; font-size: 0.68rem; }
+.description { color: #59615c; font-size: 0.84rem; line-height: 1.6; }
+.reason { display: flex; gap: 10px; margin-top: 20px; padding-top: 18px; border-top: 1px solid #e6e1d5; color: var(--color-forest); }
+.reason svg { flex: none; margin-top: 2px; }
+.reason p { color: #626a65; font-size: 0.76rem; line-height: 1.5; }
+.reason strong { display: block; margin-bottom: 3px; color: var(--color-forest-dark); }

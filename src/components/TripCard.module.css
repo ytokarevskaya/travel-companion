@@ -1,0 +1,105 @@
+.card {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.image {
+  position: relative;
+  height: 176px;
+  overflow: hidden;
+  background: #dce7de;
+}
+
+.sun {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #f1c77d;
+}
+
+.backdrop,
+.foreground {
+  position: absolute;
+  right: -8%;
+  bottom: -42%;
+  width: 75%;
+  height: 100%;
+  border-radius: 55% 45% 0 0;
+  background: #88a58a;
+  transform: rotate(-9deg);
+}
+
+.foreground {
+  right: auto;
+  bottom: -53%;
+  left: -12%;
+  width: 88%;
+  background: #456d54;
+  transform: rotate(12deg);
+}
+
+.path {
+  position: absolute;
+  bottom: -34px;
+  left: 43%;
+  width: 35px;
+  height: 105px;
+  border-radius: 50%;
+  background: #d9bf91;
+  transform: rotate(15deg);
+}
+
+.castle .foreground { background: #647761; }
+.castle .backdrop { background: #9da994; }
+.lake .path { width: 48%; height: 58px; left: 29%; bottom: 6px; transform: none; background: #75a1a2; }
+.forest { background: #cad9c5; }
+.forest .sun { background: #e3a85a; }
+.forest .foreground { background: #355b43; }
+.town .foreground { background: #b56f55; }
+.town .backdrop { background: #d5a57b; }
+.cliffs .foreground { background: #687769; }
+.cliffs .backdrop { background: #9b9e87; }
+
+.body { padding: 20px; }
+
+.titleRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.titleRow h2 {
+  font-size: 1.1rem;
+  font-weight: 680;
+  letter-spacing: -0.025em;
+}
+
+.date {
+  margin-top: 4px;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+}
+
+.type {
+  display: inline-block;
+  margin: 17px 0 12px;
+  padding: 5px 9px;
+  border-radius: 99px;
+  color: var(--color-forest-dark);
+  background: var(--color-sage);
+  font-size: 0.7rem;
+  font-weight: 650;
+}
+
+.note {
+  color: #59615c;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}

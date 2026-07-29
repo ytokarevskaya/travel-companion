@@ -1,0 +1,42 @@
+.navigation {
+  display: grid;
+  gap: 8px;
+}
+
+.link {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  gap: 13px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  color: #59635d;
+  font-size: 0.94rem;
+  font-weight: 560;
+  transition: color 160ms ease, background-color 160ms ease;
+}
+
+.link:hover {
+  color: var(--color-forest-dark);
+  background: rgba(40, 91, 69, 0.07);
+}
+
+.link.active {
+  color: var(--color-forest-dark);
+  background: var(--color-sage);
+}
+
+.mobileNav {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.mobileLink {
+  min-height: 54px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding: 5px 4px;
+  font-size: 0.69rem;
+}
