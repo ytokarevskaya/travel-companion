@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     default: "Travel Companion",
     template: "%s · Travel Companion",
   },
-  description: "A warm, personal journal for trips and new adventures.",
+  description: "A digital travel journal for trips and new adventures.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

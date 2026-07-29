@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Icon } from "@/components/Icon";
 import { PageHeader } from "@/components/PageHeader";
-import { TripCard } from "@/components/TripCard";
+import { TripList } from "@/components/TripList";
 import buttonStyles from "@/components/Button.module.css";
-import { trips } from "@/data/trips";
 import styles from "./journal.module.css";
 
 export const metadata: Metadata = { title: "My Journal" };
@@ -24,9 +23,7 @@ export default function JournalPage() {
         }
       />
       <section aria-label="Past trips" className={styles.grid}>
-        {trips.map((trip) => (
-          <TripCard key={trip.id} trip={trip} />
-        ))}
+        <TripList />
       </section>
     </>
   );

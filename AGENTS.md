@@ -10,7 +10,7 @@ Travel Companion is a warm, minimal digital travel journal with AI-generated des
 - Next.js
 - React
 - TypeScript
-- SCSS modules
+- CSS modules
 - Tabidoo as the application database
 - Make for automation and AI workflows
 

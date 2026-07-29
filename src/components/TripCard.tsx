@@ -1,11 +1,12 @@
-import type { Trip } from "@/data/trips";
+import type { TripRecordFields } from "@/data/trips";
 import { Rating } from "./Rating";
-import styles from "./TripCard.module.css";
+import styles from "./TripList.module.css";
 
-export function TripCard({ trip }: { trip: Trip }) {
+export function TripCard({ trip }: { trip: TripRecordFields }) {
   return (
     <article className={styles.card}>
-      <div className={`${styles.image} ${styles[trip.landscape]}`} aria-hidden="true">
+      {/* TODO: Implement displaying image from data, use current one as empty state */}
+      <div className={`${styles.image} ${styles.cliffs}`} aria-hidden="true">
         <span className={styles.sun} />
         <span className={styles.backdrop} />
         <span className={styles.foreground} />
@@ -20,7 +21,8 @@ export function TripCard({ trip }: { trip: Trip }) {
           <Rating value={trip.rating} />
         </div>
         <span className={styles.type}>{trip.type}</span>
-        <p className={styles.note}>{trip.note}</p>
+        {/* TODO: Display up to 3 tags */}
+        <p className={styles.note} dangerouslySetInnerHTML={{ __html: trip.note }} />
       </div>
     </article>
   );
